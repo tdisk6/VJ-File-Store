@@ -18,13 +18,13 @@ def is_enabled(value, default):
         return default
       
 # Bot Information
-API_ID = int(environ.get("API_ID", "20421609"))
-API_HASH = environ.get("API_HASH", "17187c5466fb7044793bfa8bcaa9ec68")
+API_ID = int(environ.get("API_ID", "24714248"))
+API_HASH = environ.get("API_HASH", "8c9c911448279a78bf39c22e9b70c369")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/07f0e583519b4c687548b.jpg')).split() # Bot Start Picture
+PICS = (environ.get('PICS', '')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1511468725').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "KALPATARU_FILE_STORE_BOT") # without @
+BOT_USERNAME = environ.get("BOT_USERNAME", "MOVIE_FILE_STORE_3BOT") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
@@ -35,8 +35,8 @@ CLONE_DB_URI = environ.get("CLONE_DB_URI", "mongodb+srv://hppavan271:hppavan271@
 CDB_NAME = environ.get("CDB_NAME", "hppavan271")
 
 # Database Information
-DB_URI = environ.get("DB_URI", "mongodb+srv://Hanuman:hanuman@cluster0.l5toshc.mongodb.net/?retryWrites=true&w=majority")
-DB_NAME = environ.get("DB_NAME", "Hanuman")
+DB_URI = environ.get("DB_URI", "mongodb+srv://cvmoviesbots:cv.1234567890@cluster0.1ux8r6p.mongodb.net/?retryWrites=true&w=majority")
+DB_NAME = environ.get("DB_NAME", "cluster0")
 
 # Auto Delete Information
 AUTO_DELETE_MODE = bool(environ.get('AUTO_DELETE_MODE', True)) # Set True or False
@@ -46,7 +46,7 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001965914571"))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001596001096"))
 
 # File Caption Information
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
